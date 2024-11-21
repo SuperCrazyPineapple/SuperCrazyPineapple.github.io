@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crazy Pineapple - Loading</title>
+    <!-- Lien vers le fichier CSS de la page de chargement -->
+    <link rel="stylesheet" href="css/loading.css" />
+  </head>
+  <body>
+    <!-- Barre animée de chargement -->
+    <div class="bar-effect"></div>
+
+    <!-- Contenu de la page de chargement -->
+    <div class="loader-container">
+      <h1 class="animated-title">Crazy Pineapple</h1>
+      <h2>Website Designer</h2>
+      <div class="spinner"></div>
+      <p>Loading <span id="loadingPercent">0%</span></p>
+    </div>
+
+    <!-- Script pour gérer le pourcentage de chargement et la redirection -->
+    <script>
+      let percent = 0;
+      const loadingPercent = document.getElementById("loadingPercent");
+
+      const interval = setInterval(() => {
+        percent += 1;
+        loadingPercent.textContent = `${percent}%`;
+
+        if (percent >= 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            window.location.href = "main.html"; // Redirige vers la page principale
+          }, 500);
+        }
+      }, 70); // Augmentation du pourcentage toutes les 70ms
+    </script>
+  </body>
+</html>

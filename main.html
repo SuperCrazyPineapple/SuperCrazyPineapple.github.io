@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crazy Pineapple - Main</title>
+    <!-- Lien vers le fichier CSS principal -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <div class="navbar">
+      <div class="logo">
+        <h1>Crazy Pineapple</h1>
+      </div>
+    </div>
+    <!-- Section principale avec texte et flèche -->
+    <div class="center-text">
+      <h2>I Put Imagination <br />Into Action</h2>
+      <a href="#about" class="scroll-down">
+        <div class="arrow-circle">
+          <span class="arrow">↓</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Section principale avec les liens "About" et "Contact" -->
+    <section class="main-section">
+      <a href="#about" class="about-link">About</a>
+      <a href="#contact" class="contact-link">Contact</a>
+
+      <!-- Vidéo en arrière-plan (facultatif) -->
+      <video autoplay muted loop class="background-video">
+        <source
+          src="./Photos/3059861-uhd_3840_2160_25fps.mp4"
+          type="video/mp4" />
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+    </section>
+
+    <!-- Section About -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">À propos de nous</h2>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="./Photos/photo hacker.jpg" alt="Notre équipe créative" />
+        </div>
+
+        <div class="about-text">
+          <p>
+            <strong>Crazy Pineapple</strong>, l'agence web qui transforme vos
+            idées en réalité.
+          </p>
+          <ul>
+            <li>
+              <strong>Des sites web conçus pour vous :</strong> Un design unique
+              et personnalisé, adapté à votre projet.
+            </li>
+            <li>
+              <strong>Une équipe passionnée :</strong> Nos designers et
+              développeurs vous accompagnent tout au long du processus.
+            </li>
+            <li>
+              <strong>Tarifs transparents :</strong> À partir de
+              <strong>499$</strong>, avec un tarif fixe et sans surprise.
+            </li>
+            <li>
+              <strong>Livraison rapide :</strong> Recevez votre site web en
+              moins de 48 heures, clé en main.
+            </li>
+          </ul>
+          <p>
+            Que vous soyez un artisan, un artiste, un entrepreneur ou une
+            association, nous créons des sites web accessibles, professionnels
+            et à prix abordables. <br />
+            <strong
+              >Prêt à faire passer votre projet au niveau supérieur ?</strong
+            >
+            Contactez-nous dès aujourd'hui !
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="steps-section">
+      <video autoplay muted loop class="background-video">
+        <source src="./Photos/video about.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <h2 id="steps-title">5 étapes pour la création de votre site</h2>
+      <div class="steps-container">
+        <div class="step" id="step-1">Étape 1 : Choisissez votre modèle</div>
+        <div class="step" id="step-2">
+          Étape 2 : Envoyez-nous le formulaire rempli
+        </div>
+        <div class="step" id="step-3">
+          Étape 3 : Rencontrez en ligne l'un de nos designers
+        </div>
+        <div class="step" id="step-4">Étape 4 : Création du site</div>
+        <div class="step" id="step-5">Étape 5 : Reception</div>
+      </div>
+    </section>
+
+    <!-- Bouton fixe -->
+    <div class="fixed-button" id="start-now-button">Start Now</div>
+
+    <!-- Formulaire en popup -->
+    <div class="popup-form" id="popup-form">
+      <div class="form-container">
+        <h2>Demande de création de site</h2>
+        <p>
+          Pour toute question ou demande, remplissez le formulaire ci-dessous :
+        </p>
+        <form id="contact-form">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Numéro de téléphone :</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Envoyer</button>
+          <button type="button" id="close-form">Fermer</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+    <!-- Lien vers ton fichier JS -->
+  </body>
+</html>
